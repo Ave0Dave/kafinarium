@@ -108,8 +108,9 @@ ol > li::marker {
 .current-nav {
   display: flex;
   width: 100%;
+  padding: 0.2em;
   border-bottom: 1px solid #2e34402c;
-  background-color: var(--color-white);
+  background: var(--color-white);
 }
 
 .current-nav a {
@@ -207,7 +208,6 @@ address, small {
   margin-top: 5.4em;
 }
 
-
 .card {
   border-radius: 0.5em;
   width: 18em;
@@ -271,7 +271,50 @@ address, small {
     width: 14em;
   }
 
-  .tools{
+  .tools {
+    width: 100%;
+  }
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  nav, footer{
+      display: none;
+  }
+
+  .site-name {
+    padding-bottom: 0;
+  }
+
+  .soft-shadow {
+    box-shadow: none;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card-wrapper, .images-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 2em;
+  }
+
+  .card {
+    margin: 0 0.8em;
+    background: none;
+  }
+
+  .method-img {
+    width: 13em;
+  }
+
+  .tools {
     width: 100%;
   }
 }
