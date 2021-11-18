@@ -46,7 +46,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 h3::after {
@@ -60,15 +60,35 @@ h3::after {
   background: var(--color-yellow);
 }
 
-a {
+nav a, footer a {
   text-decoration: none;
   font-style: normal;
+  color: black;
+}
+
+a {
+  font-style: italic;
+  transition: 200ms ease-in-out;
+  text-decoration-color: var(--color-yellow);
+  text-decoration-thickness: 0.2em;
+}
+
+a:visited:hover, a:hover {
+  text-decoration-color: var(--color-pink);
+}
+
+a:visited {
   color: black;
 }
 
 p {
   padding-bottom: 1em;
   text-align: justify;
+}
+
+.card p {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
 }
 
 ul {
@@ -108,7 +128,7 @@ ol > li::marker {
 .current-nav {
   display: flex;
   width: 100%;
-  padding: 0.2em;
+  padding: 0.5em;
   border-bottom: 1px solid #2e34402c;
   background: var(--color-white);
 }
@@ -168,10 +188,16 @@ ol > li::marker {
   transform: rotate(360deg);
 }
 
-main {
-  margin: 0 auto;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 3em 1.5em;
-  max-width: 120ch;
+}
+
+main {
+  max-width: 110ch;
   min-width: 10em;
 }
 
@@ -187,12 +213,11 @@ footer {
   align-items: center;
 
   height: 5em;
-  max-width: 115ch;
-  width: 95%;
+  max-width: 110ch;
+  width: 100%;
   
+  margin-top: 3em;
   border-radius: 0.4em;
-  margin: 0 auto;
-  margin-bottom: 3em;
 }
 
 address, small {
