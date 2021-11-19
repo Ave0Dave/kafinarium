@@ -63,7 +63,6 @@ h3::after {
 nav a, footer a {
   text-decoration: none;
   font-style: normal;
-  color: black;
 }
 
 a {
@@ -71,6 +70,7 @@ a {
   transition: 200ms ease-in-out;
   text-decoration-color: var(--color-yellow);
   text-decoration-thickness: 0.2em;
+  color: black;
 }
 
 a:visited:hover, a:hover {
