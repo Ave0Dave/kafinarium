@@ -1,5 +1,4 @@
 :root {
-  --color-gray-dark: #2E3440;
   --color-white: #E5E9F0;
   --color-pink: #e9d3e5;
   --color-yellow: #f5dcaa;
@@ -204,8 +203,10 @@ main {
 
 .hero-img {
   width: 100%;
-  border-radius: 0.4em;
   padding: 2em;
+  margin: 1em 0;
+  background: var(--color-pink);
+  border-radius: 0.4em;
 }
 
 footer {
