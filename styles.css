@@ -340,8 +340,15 @@ address, small {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
     margin-top: 2em;
+  }
+
+  .card-wrapper {
+    margin-top: 10em;
+  }
+
+  .preparation {
+    page-break-before: always;
   }
 
   .card {
