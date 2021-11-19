@@ -46,7 +46,6 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
-  /* display: inline-block; */
 }
 
 h3::after {
@@ -54,10 +53,12 @@ h3::after {
   position: absolute;
   right: 0;
   bottom: 45%;
-  width: 30%;
+  max-width: 30%;
+  width: 7vw;
   height: 0.3rem;
   border-radius: 0.2em;
   background: var(--color-yellow);
+  z-index: 0;
 }
 
 nav a, footer a {
