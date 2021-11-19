@@ -324,6 +324,10 @@ address, small {
       display: none;
   }
 
+  p {
+    page-break-inside: avoid;
+  }
+
   .site-name {
     padding-bottom: 0;
   }
@@ -344,7 +348,7 @@ address, small {
   }
 
   .card-wrapper {
-    margin-top: 10em;
+    margin-top: 5em;
   }
 
   .preparation {
