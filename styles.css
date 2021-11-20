@@ -87,11 +87,6 @@ p {
   text-align: justify;
 }
 
-.card p {
-  padding-top: 0.5em;
-  padding-bottom: 0em;
-}
-
 ul {
   list-style: none;
 }
@@ -106,6 +101,10 @@ ol > li::marker {
   font-weight: bold;
   font-family: "Garamond", serif;
   font-size: 2rem;
+}
+
+img {
+  height: auto;
 }
 
 .site-name {
@@ -247,6 +246,11 @@ address, small {
   width: fit-content;
   padding: 0.4em;
   border-radius: 0.4em;
+}
+
+.card p {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
 }
 
 .tip {
