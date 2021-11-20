@@ -345,6 +345,10 @@ address, small {
     grid-template-columns: 1fr;
   }
 
+  .tools-wrapper {
+    width: 100%;
+  }
+
   .card-wrapper, .images-wrapper {
     flex-wrap: wrap;
     flex-direction: row;
@@ -366,6 +370,7 @@ address, small {
   }
 
   .method-img {
+    aspect-ratio: auto;
     width: 13em;
   }
 
